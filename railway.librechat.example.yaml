@@ -1,0 +1,33 @@
+version: 1.3.6
+
+cache: true
+
+registration:
+  socialLogins: ['openid']
+
+interface:
+  endpointsMenu: true
+  modelSelect: true
+  parameters: true
+  sidePanel: true
+  presets: true
+  bookmarks: true
+  multiConvo: true
+  agents:
+    use: false
+    create: false
+    share: false
+    public: false
+  marketplace:
+    use: false
+
+endpoints:
+  custom:
+    - name: 'litellm'
+      apiKey: '${LITELLM_API_KEY}'
+      baseURL: '${LITELLM_BASE_URL}'
+      models:
+        fetch: true
+      titleConvo: true
+      titleModel: 'current_model'
+      modelDisplayLabel: 'LiteLLM'
