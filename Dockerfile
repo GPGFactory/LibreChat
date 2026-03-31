@@ -40,6 +40,7 @@ RUN \
     npm ci --no-audit
 
 COPY --chown=node:node . .
+RUN test -f /app/librechat.yaml
 
 RUN \
     # React client build with configurable memory
