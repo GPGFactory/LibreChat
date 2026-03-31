@@ -27,10 +27,10 @@ endpoints:
       apiKey: '${LITELLM_API_KEY}'
       baseURL: '${LITELLM_BASE_URL}'
       models:
-        default: ["gpt-3.5-turbo"]
+        default: ["gpt-4o-mini"]
         fetch: true
       titleConvo: true
-      titleModel: "gpt-3.5-turbo"
+      titleModel: "gpt-4o-mini"
       summarize: false
-      summaryModel: "gpt-3.5-turbo"
+      summaryModel: "gpt-4o-mini"
       modelDisplayLabel: "LiteLLM"
