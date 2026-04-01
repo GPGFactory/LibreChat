@@ -14,21 +14,21 @@ interface:
   prompts:
     use: true
     create: true
-    share: false
-    public: false
+    share: true
+    public: true
   bookmarks: true
   multiConvo: true
   agents:
     use: true
     create: true
-    share: false
-    public: false
+    share: true
+    public: true
   peoplePicker:
     users: true
     groups: true
     roles: true
   marketplace:
-    use: false
+    use: true
 
 endpoints:
   custom:
