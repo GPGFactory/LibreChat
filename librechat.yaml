@@ -14,12 +14,12 @@ interface:
   bookmarks: true
   multiConvo: true
   agents:
-    use: false
-    create: false
-    share: false
-    public: false
+    use: true
+    create: true
+    share: true
+    public: true
   marketplace:
-    use: false
+    use: true
 
 endpoints:
   custom:
