@@ -23,8 +23,8 @@ interface:
 
 endpoints:
   custom:
-    - name: 'litellm'
-      apiKey: '${LITELLM_API_KEY}'
+    - name: 'OpenAI-custom'
+      apiKey: '${LITELLM_OPENAI_API_KEY}'
       baseURL: '${LITELLM_BASE_URL}'
       models:
         default: ["gpt-4o-mini"]
@@ -33,4 +33,15 @@ endpoints:
       titleModel: "gpt-4o-mini"
       summarize: false
       summaryModel: "gpt-4o-mini"
-      modelDisplayLabel: "LiteLLM"
+      modelDisplayLabel: "OpenAI-custom"
+    - name: 'Google-custom'
+      apiKey: '${LITELLM_GOOGLE_API_KEY}'
+      baseURL: '${LITELLM_BASE_URL}'
+      models:
+        default: ["gemini/gemini-2.5-flash-lite"]
+        fetch: true
+      titleConvo: true
+      titleModel: "gemini/gemini-2.5-flash-lite"
+      summarize: false
+      summaryModel: "gemini/gemini-2.5-flash-lite"
+      modelDisplayLabel: "Google-custom"
