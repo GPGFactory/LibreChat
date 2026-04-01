@@ -45,3 +45,25 @@ endpoints:
       summarize: false
       summaryModel: "gemini/gemini-2.5-flash-lite"
       modelDisplayLabel: "Google-custom"
+    - name: 'Anthropic-custom'
+      apiKey: '${LITELLM_ANTHROPIC_API_KEY}'
+      baseURL: '${LITELLM_BASE_URL}'
+      models:
+        default: ["claude-4-5-sonnet"]
+        fetch: true
+      titleConvo: true
+      titleModel: "claude-4-5-sonnet"
+      summarize: false
+      summaryModel: "claude-4-5-sonnet"
+      modelDisplayLabel: "Anthropic-custom"
+    - name: 'Mistral-custom'
+      apiKey: '${LITELLM_MISTRAL_API_KEY}'
+      baseURL: '${LITELLM_BASE_URL}'
+      models:
+        default: ["mistral-small"]
+        fetch: true
+      titleConvo: true
+      titleModel: "mistral-small"
+      summarize: false
+      summaryModel: "mistral-small"
+      modelDisplayLabel: "Mistral-custom"
