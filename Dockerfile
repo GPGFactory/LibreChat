@@ -42,6 +42,10 @@ RUN \
 COPY --chown=node:node . .
 RUN test -f /app/librechat.yaml
 
+USER root
+RUN chown -R node:node /app
+USER node
+
 RUN \
     # React client build with configurable memory
     NODE_OPTIONS="--max-old-space-size=${NODE_MAX_OLD_SPACE_SIZE}" npm run frontend; \
