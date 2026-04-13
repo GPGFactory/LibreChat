@@ -22,8 +22,15 @@ interface:
   memories: true
   multiConvo: true
   agents: true
-  peoplePicker: true
-  marketplace: true
+  peoplePicker:
+    users: true
+    groups: true
+    roles: true
+  marketplace:
+    use: true
+    create: true
+    share: false
+    public: false
   remoteAgents:
     use: true
     create: true
@@ -44,7 +51,7 @@ interface:
         fr: "Activer uniquement les serveurs en lesquels vous avez confiance"
   
 includedTools: ["google", "calculator", "gemini_image_gen"]
-imageOutputType: "png"
+imageOutputType: "PNG"
 
 speech:
   tts:
