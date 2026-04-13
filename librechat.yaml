@@ -51,7 +51,7 @@ interface:
         fr: "Activer uniquement les serveurs en lesquels vous avez confiance"
   
 includedTools: ["google", "calculator", "gemini_image_gen"]
-imageOutputType: "PNG"
+imageOutputType: "png"
 
 speech:
   tts:
