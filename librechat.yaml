@@ -31,24 +31,24 @@ interface:
     create: true
     share: false
     public: false
-  remoteAgents:
-    use: true
-    create: true
-    share: false
-    public: false
+#  remoteAgents:
+#    use: true
+#    create: true
+#    share: false
+#    public: false
   
-  mcpServers:
-    placeholder: "Select MCP Server"
-    use: true
-    create: true
-    share: false
-    trustCheckbox:
-      label:
-        en: "I trust this server"
-        fr: "Je fais confiance à ce serveur"
-      subLabel:
-        en: "Only enable servers you trust"
-        fr: "Activer uniquement les serveurs en lesquels vous avez confiance"
+#  mcpServers:
+#    placeholder: "Select MCP Server"
+#    use: true
+#    create: true
+#    share: false
+#    trustCheckbox:
+#      label:
+#        en: "I trust this server"
+#        fr: "Je fais confiance à ce serveur"
+#      subLabel:
+#        en: "Only enable servers you trust"
+#        fr: "Activer uniquement les serveurs en lesquels vous avez confiance"
   
 includedTools: ["google", "calculator", "gemini_image_gen"]
 imageOutputType: "png"
@@ -56,9 +56,10 @@ imageOutputType: "png"
 speech:
   tts:
     openai:
-      apiKey: "${TTS_API_KEY}"
-      model: "tts-1-hd"
-      voices: ["alloy", "echo", "fable", "onyx", "nova", "shimmer"]
+      url: 'https://litellm-production-6799.up.railway.app'
+      apiKey: '${TTS_API_KEY}'
+      model: 'tts-1'
+      voices: ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
   stt:
     openai:
       apiKey: "${STT_API_KEY}"
