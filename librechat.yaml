@@ -62,6 +62,7 @@ speech:
       voices: ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
   stt:
     openai:
+      url: 'https://litellm-production-6799.up.railway.app/v1/audio/transcriptions'
       apiKey: "${STT_API_KEY}"
       model: "whisper-1"
   speechTab:
